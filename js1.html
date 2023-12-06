@@ -7,16 +7,19 @@
 </head>
 <body>
     <script>
-    let number=3;
-    if(number>0){
-        document.writeln(number+" &nbsp;&nbsp;is a positive number");
-    }
-    else if(number<0) {
-        document.writeln(number+"is a negative number");
-    }
-    else {
-        document.writeln(number+"is 0");
-    }
+   let arr1 = [];
+        let total = 0;
+        function getSalary(arr){
+            arr1 = arr;
+            for (let i=0; i<arr1.length; i++){
+                total = total + arr1[i].salary;
+            }
+            return total;
+        }
+            console.log(getSalary([{ name: "John", salary: 23000 },
+                { name: "Steve", salary: 40000 },
+                { name: "Martin", salary: 15000 }]));
+                
 </script>
 </body>
 </html>
