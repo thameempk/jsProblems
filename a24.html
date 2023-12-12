@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[];
+        let ar=[];
+        let str ="";
+        function reverse(str){
+            arr = str.split(" ");
+            for (let i in arr){
+                if(arr[i].length >= 5){
+                    let rev = arr[i].split("").reverse().join("");
+                   ar.push(rev);
+                }else{
+                    ar.push(arr[i]);
+                }
+            }
+            str = ar.join(" ");
+            return str;
+        }
+       console.log(reverse( "Hey fellow warriors"));
+    </script>
+</body>
+</html>
