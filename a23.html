@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let arr=[];
+       let total=0;
+       function amount(value){
+          arr=value;
+          for (i in arr){
+            total+=arr[i].quantity*arr[i].price;
+          }
+         return total;
+       }
+       console.log(amount([
+{ product: "Milk", quantity: 8, price: 10 },
+{ product: "Biscuit", quantity: 1, price: 20 }
+]))
+
+    </script>
+</body>
+</html>
